@@ -1,4 +1,4 @@
-# Puppet manifest to install nginx
+# Installs nginx server with puppet
 package { 'nginx':
   ensure => installed,
 }
@@ -11,7 +11,7 @@ file_line { 'aaaaa':
 }
 
 file { '/var/www/html/index.html':
-  content => 'Holberton School',
+  content => 'Hello World!',
 }
 
 service { 'nginx':
